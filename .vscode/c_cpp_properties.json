@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/googletest/include"   // ✅ Add GTest headers
+      ],
+      "compilerPath": "C:\\mingw-w64\\mingw64\\bin\\g++.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
