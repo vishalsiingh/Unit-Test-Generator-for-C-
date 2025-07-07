@@ -1,0 +1,53 @@
+===========================================
+        UNIT TEST COVERAGE REPORT
+===========================================
+
+📁 Project Structure:
+- Source File: cpp_project/EmployeeManager.cpp
+- Test File:   tests/test_EmployeeManager.cpp
+
+📊 Coverage Summary:
+- Total Lines in Source:      14
+- Lines Executed by Tests:    12
+- Lines Not Covered:          2
+- Overall Coverage:           85.71%
+
+🟢 Covered Lines:
+- addEmployee() implementation
+- getEmployeeCount() implementation
+
+🔴 Uncovered Lines:
+- Line 2: void UnusedFunction() {} (not called by any test)
+
+🛠 Tools & Environment:
+- Compiler: g++ (with --coverage flags)
+- Test Framework: Google Test (gtest)
+- Coverage Tool: gcov
+- OS: Ubuntu 22.04 (or equivalent)
+
+⚙️ Reproduce Coverage Locally:
+
+1. Compile with coverage flags:
+   g++ -fprofile-arcs -ftest-coverage -std=c++11 \
+       -I /usr/include/gtest -lgtest -lgtest_main -pthread \
+       cpp_project/EmployeeManager.cpp \
+       tests/test_EmployeeManager.cpp -o test_runner
+
+2. Run tests:
+   ./test_runner
+
+3. Generate coverage report:
+   gcov cpp_project/EmployeeManager.cpp
+
+4. Output:
+   - Creates: EmployeeManager.cpp.gcov
+   - View in terminal or open in editor
+
+📌 Notes:
+- The unit tests were auto-generated and cleaned for duplicates.
+- Formatting and naming conventions follow C++ best practices.
+- Additional edge case tests can improve overall coverage.
+
+🧑‍💻 Author: Vishal Singh
+
+📅 Report Generated: July 7, 2025

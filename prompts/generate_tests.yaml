@@ -1,7 +1,9 @@
-instruction: |
-  Given the following C++ source code, write Google Test-based unit tests:
-  - Include the correct headers.
-  - Use TEST or TEST_F macros.
-  - Cover each public method with 2-3 unique test cases.
-  - Avoid duplicate or trivial tests.
-  - The output should be a complete, compilable C++ file.
+instructions:
+  - Generate Google Test unit tests for the given C++ file.
+  - Ensure each function has a corresponding test.
+  - Do not repeat test logic.
+  - Use meaningful test case names.
+  - Keep tests simple and scoped.
+  - Use assert macros from gtest.
+  - Avoid generating tests for unused or trivial functions.
+  - Ensure tests compile and run with g++ and gtest.
